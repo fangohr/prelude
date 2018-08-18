@@ -137,8 +137,6 @@
 (setq org-agenda-files
       (find-lisp-find-files "~/xfel" "\.org$"))
 
-(set-default-font "Inconsolata")
-
 ;; (require 'color-theme)
 ;; (setq color-theme-is-global t)
 ;; (color-theme-initialize)
@@ -212,3 +210,10 @@
 (setq doom-font (font-spec :family "Inconsolata" :size 18))
 
 (setq org-startup-indented t)
+
+;;
+(set-default-font "Inconsolata")
+;; (set-frame-font "Inconsolata-12")
+;; follow https://stackoverflow.com/questions/3984730/emacs-gui-with-emacs-daemon-not-loading-fonts-correctly
+;; to set font for 'emacs --daemon' mode
+(setq default-frame-alist '((font . "Inconsolata-14")))
