@@ -131,11 +131,15 @@
 ;;  ;; not working? ;;    ))
 ;;  ;; not working? ;;
 ;;
-(setq org-agenda-include-all-todo t)
+
+;; I don't use these, and they make emacs slow, so comment out now 9-9-2018
+;;(setq org-agenda-include-all-todo t)
 ;; (setq org-agenda-files '("~/xfel/xfel"))
-(load-library "find-lisp")
-(setq org-agenda-files
-      (find-lisp-find-files "~/xfel" "\.org$"))
+;;(load-library "find-lisp")
+;;(setq org-agenda-files
+;;      (find-lisp-find-files "~/xfel" "\.org$"))
+;;
+
 
 ;; (require 'color-theme)
 ;; (setq color-theme-is-global t)
@@ -208,6 +212,8 @@
 ;; (setq doom-font (font-spec :family "Menlo" :size 18))
 
 (setq doom-font (font-spec :family "Inconsolata" :size 18))
+
+(setq org-element-use-cache nil)
 
 (setq org-startup-indented t)
 
