@@ -217,3 +217,7 @@
 ;; follow https://stackoverflow.com/questions/3984730/emacs-gui-with-emacs-daemon-not-loading-fonts-correctly
 ;; to set font for 'emacs --daemon' mode
 (setq default-frame-alist '((font . "Inconsolata-14")))
+
+(global-set-key (kbd "C-x C-o") 'other-window)
+
+;; (global-set-key (kbd "s-return") 'toggle-frame-fullscreen)
